@@ -17,7 +17,7 @@ SELECT
 FROM
     customers
 WHERE
-    creditlimit != 0
+    creditlimit != 0 -- this was an aim to filter out irrelevant data
 GROUP BY customerNumber
 ORDER BY creditLimit DESC
 LIMIT 25;
